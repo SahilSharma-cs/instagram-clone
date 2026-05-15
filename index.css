@@ -30,7 +30,10 @@ p{
     margin: 0;
     font-size: 12px;
 }
-
+i{
+    font-size: 20px;
+    cursor: pointer;
+}
 
 .container{
     max-width: 400px;
@@ -70,6 +73,7 @@ p{
     height: auto;
 }
 
+
 .post-actions{
     display: flex;
     gap: 17px;
@@ -77,10 +81,11 @@ p{
     align-items: center;
 }
 
-.post-actions img{
-    width: 23px;
-    cursor: pointer;
+
+.liked{
+    color: red;
 }
+
 .post-info{
     padding: 0px 10px 7px 10px;
 }
