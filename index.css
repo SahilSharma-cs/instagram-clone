@@ -93,7 +93,7 @@ i{
     border-bottom: #EDEDED 25px solid;
 }
 
-.post-block::after {
+/* .post-block::after {
     content: "";
     display: block;
     height: 20px;
@@ -102,7 +102,7 @@ i{
 
 .post-block:last-child::after{
     display: none;
-}
+} */
 
 .bold-text{
     font-weight: 700;
