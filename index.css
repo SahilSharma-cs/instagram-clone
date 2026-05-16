@@ -89,9 +89,9 @@ i{
 .post-info{
     padding: 0px 10px 7px 10px;
 }
-/* .post-block{
+.post-block{
     border-bottom: #EDEDED 25px solid;
-} */
+}
 
 .post-block::after {
     content: "";
