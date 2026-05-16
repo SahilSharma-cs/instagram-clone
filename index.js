@@ -1,6 +1,6 @@
 import { posts } from  "./data.js"
 
-const postBlock = document.getElementById('post-block')
+const postContainer = document.getElementById('post-container')
 
 document.addEventListener('click',function(e){
     if(e.target.dataset.like){
@@ -34,7 +34,9 @@ function getPostHtml(){
             likeIconClass = 'liked'
         }
 
-        postHtml+= `<div class="post-header">
+        postHtml+= `
+        <div class="post-block" id="post-block">
+        <div class="post-header">
             <img class="profile-logo" 
                 src="${post.avatar}">
                 <div class="profile-text">
@@ -54,12 +56,13 @@ function getPostHtml(){
                 <h3>${post.likes} likes</h3>
                 <p><span class="bold-text">${post.username}</span>${post.comment}</p>
         </div>
+        </div>
         `
     })
     return postHtml
 }
 
 function render(){
-    postBlock.innerHTML = getPostHtml()
+    postContainer.innerHTML = getPostHtml()
 }
 render()
